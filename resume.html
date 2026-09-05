@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css" />
+
+  <style>
+     * { 
+      box-sizing: : border-box;
+      margin: 0;
+      padding: 0;
+     }
+     
+    body {
+      font-family: Arial, sans-serif;
+      backgroud: #f2f2f2;
+      color: #333;
+      light-height: 1.5;
+    }
+    resume {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 30px auto;
+      background: white;
+      padding: 25px 45px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15)
+    }
+    /*HEADER*/
+    .header {
+      border-bottom: 2px solid #333;
+      padding-bottom_20px;
+      margin-bottom: 25px;
+    }
+    .header h1 {
+      font-size: 32px;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+
+    }
+    .header h2 {
+      font-size; 17px;
+      font-weight: normal;
+      margin-bottom: 12px;
+    }
+    .contact {
+      font-size: 13px;
+      font-weight: normal;
+      margin-bottom: 12px;
+    }
+    .contact {
+      font-size: 13px;
+      color: #555;
+    }
+    .contact span{
+      margin-right: 15px;
+    }
+    /*SECTIOND*/
+    .section {
+      margin-bottom: 24px;
+    }
+    .section-tittle {
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-bottm: 1px solid #999;
+      padding-bottom: 5px;
+      margin-bottom: 12px;
+    }
+    /*PROFILE*/
+    .profile {
+      font-size: 14px;
+      text-align: justify;
+  }
+/*EXPERIENCE*/
+.job {
+  margin-bottom: 17px;
+}
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3px;
+}
+.job-tittle {
+    font-weight: bold;
+    font-size: 15px;
+}
+.company{
+    font-size: 13px;
+    color: #666;
+}
+.job ul {
+    margin-left: 20px;
+    font-size: 13.5px;
+}
+/*EDUCATION*/
+.education {
+    margin-bottom: 15px;
+}
+.education-tittle {
+    font-weight: bold;
+    font.size: 15px;
+}
+.education p {
+  font-size: 13.5px
+}
+/*SKILS*/
+.skilss {
+    display: grid;
+    grid-template-colums: 1fr 1fr;
+    gap: 8px;
+    font-size: 13.5px;
+}
+/*PROJECT*/
+.project {
+    margin-bottom: 12px;
+}
+.project p {
+    font-size: 13.5px;
+}
+/*PRINT*/
+@media print {
+  body {
+    background: white;
+  }
+.resume {
+    margin: 0;
+    box-shadow: none;
+    width: 210mm;
+    min-height: 297mm;
+    }
+}
+ </style>
+ </head>
+ <body>
+    <div class="resume">
+      <!--HEADER-->
+    <div class="header">
+      <h1> Aniara Lauron </h1>
+      <h2>Software engineering Student| Developer</h2>
+
+      <div class=""contact">
+      <span>Copenhagen, Denmark</span>
+      <span>+45 91804783</span>
+      <span>383723@via.dk</span>
+      <span>aaniara</span>
+      </div>
+    </div>
+
+    <!--PROFILE-->
+    <div class="section">
+      <h3 class="section-tittle">Profile</h3>
+
+      <p class="profile">
+        Ambitous software engineering student with a background in natural science and practical experience in technology and programming.
+        Interested in software development, automation and innovative techonology.
+      </p>
+    </div>
+    <!--EDUCATION-->
+    <div class="section">
+      <h3 class="section-tittle">Education</h3>
+
+      <div class="education">
+        <div class="education-tittle">
+          Bachelor in Software engineering
+    </div>
+    <p>Via University College</p>
+    <p>2026 - Present</p>
+
+    <div class="education">
+      <div class="education-tittle">
+        Bachelor of Science in Pharmacy
+    </div>
+    <p>University of Southern Philippines</p>
+    <p>2013-2015</p>
+    </div>
+    </div>
+    
+    <!--EXPERIENCE-->
+    <div class="section">
+      <h3 class="section-tittle">Work experience</h3>
+    
+      <div class="job">
+        <div class="job-header">
+          <div>
+            <div class="job-tittle">Hospitality</div>
+            <div class="company">Copenhagen Marriott</div>
+            </div>
+            <div class="date">
+                2025 - 2026
+                </div>
+              </div>
+              <ul>
+                <li>Provided high-quality service in a fast-paced environment</li>
+                <li>Worked independently while coordination with team members</li>
+                <li>Managed tasks efficiently whilte maintaining attentionto detail</li>
+              </ul>
+              </div>
+
+          <div class="job">
+            <div class="job-header">
+            <div>
+          <div class="job-tittle">Pharmacy Technician</div>
+          <div class="company">Optum Global Solutions</div>
+          </div>
+          <div class="date">
+              2022-2023
+        </div>
+        </div>
+        <ul>
+          <li>Clarifying patient prescription</li>
+          <li>Handling e-presciption and refill</li>
+        </ul>
+      </div>
+   <div class="job">
+            <div class="job-header">
+            <div>
+          <div class="job-tittle">Pharmacy Assitant</div>
+          <div class="company">VSMMC Hospital</div>
+          </div>
+          <div class="date">
+              2021-2022
+        </div>
+        </div>
+        <ul>
+          <li>Handling patient prescription</li>
+          <li>Operate pnematic tube for drug distribution in different wards</li>
+          <li> Encoded prescriptions and insurance claims using BizBox and iPOS systems for various public health insurance programs.</li>
+        </ul>
+      </div>
+      <a href="page2.html"><button type="button">Next</button></a>
+    </style>
+  </head>
+  </body>
+</html>
