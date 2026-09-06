@@ -3,251 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resume</title>
+
+    <title>About Me - Aniara Lauron</title>
+
     <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <style>
-     * { 
-      box-sizing: : border-box;
-      margin: 0;
-      padding: 0;
-     }
-     
-    body {
-      font-family: Arial, sans-serif;
-      backgroud: #f2f2f2;
-      color: #333;
-      light-height: 1.5;
-    }
-    resume {
-      width: 210mm;
-      min-height: 297mm;
-      margin: 30px auto;
-      background: white;
-      padding: 25px 45px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15)
-    }
-    /*HEADER*/
-    .header {
-      border-bottom: 2px solid #333;
-      padding-bottom 20px;
-      margin-bottom: 25px;
-    }
-    .header h1 {
-      font-size: 32px;
-      letter-spacing: 1px;
-      margin-bottom: 12px;
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="index.html" class="active">About Me</a>
+        </li>
+        <li>
+          <a href="cv.html">CV</a>
+        </li>
+        <li>
+          <a href="portfolio.html">Portfolio</a>
+        </li>
+      </ul>
+    </nav>
 
-    }
-    .header h2 {
-      font-size; 18px;
-      font-weight: normal;
-      margin-bottom: 12px;
-    }
+    <main class="page">
+      <header>
+        <h1>Aniara Lyn Lauron</h1>
 
-    .header h3 {
-      font-size: 16px;
-    }
-    .contact {
-      font-size: 13px;
-      color: #555;
-      margin-bottom: 12px;
-    }
-    .contact span{
-      margin-right: 15px;
-    }
-    /*SECTION*/
-    .section {
-      margin-bottom: 24px;
-    }
-    .section-tittle {
-      font-size: 18px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      border-bottm: 1px solid #999;
-      padding-bottom: 5px;
-      margin-bottom: 12px;
-    }
-    /*PROFILE*/
-    .profile {
-      font-size: 14px;
-      text-align: justify;
-  }
-/*EXPERIENCE*/
-.job {
-  margin-bottom: 17px;
-}
-.job-header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 3px;
-}
-.job-tittle {
-    font-weight: bold;
-    font-size: 15px;
-}
-.company{
-    font-size: 13px;
-    color: #666;
-}
-.job ul {
-    margin-left: 20px;
-    font-size: 13.5px;
-}
-/*EDUCATION*/
-.education {
-    margin-bottom: 15px;
-}
-.education-tittle {
-    font-weight: bold;
-    font.size: 15px;
-}
-.education p {
-  font-size: 13.5px
-}
-/*SKILS*/
-.skills {
-    display: grid;
-    grid-template-colums: 1fr 1fr;
-    gap: 8px;
-    font-size: 13.5px;
-}
-/*PROJECT*/
-.project {
-    margin-bottom: 12px;
-}
-.project p {
-    font-size: 13.5px;
-}
- /*BUTTON*/
- button {
-    padding: 8px 20px;
-    font-size: 14px;
-    cursor: pointer;
- }
-/*PRINT*/
-@media print {
-  body {
-    background: white;
-  }
-.resume {
-    margin: 0;
-    box-shadow: none;
-    width: 210mm;
-    min-height: 297mm;
-    }
-}
- </style>
- </head>
- <body>
-    <div class="resume">
-      <!--HEADER-->
-    <div class="header">
-     <body>
-
-<div class="page">
-
-    <header>
-        <h1>Aniara Lauron</h1>
         <p class="subtitle">
-            Software Engineering Student | Developer
+          Pharmacy Graduate | Engineering Student | Technology Enthusiast
         </p>
+      </header>
 
-        <div class="contact">
-            <span>🏠 Copenhagen, Denmark</span>
-            <span>☎ +45 91804783</span>
-            <span>✉ 383723@via.dk</span>
-            <span>💾 aaniara</span>
+      <div class="top-line"></div>
+
+      <section class="profile">
+        <img src="images/photo.jpg" alt="Profile photo" class="profile-image" />
+
+        <div class="profile-text">
+          <h2 class="section-title">About Me</h2>
+
+          <p>
+            Hello! My name is Aniara Lyn Lauron. I have a background in pharmacy
+            and an interest in science, technology, engineering and innovation.
+          </p>
+
+          <p>
+            I enjoy learning new technologies and developing practical projects
+            that combine creativity with problem solving.
+          </p>
         </div>
-    </header>
+      </section>
 
-    <div class="top-line"></div>
+      <section>
+        <h2 class="section-title">My Interests</h2>
 
-    <!--PROFILE-->
-    <div class="section">
-      <h3 class="section-tittle">Profile</h3>
+        <div class="section-line"></div>
 
-      <p class="profile">
-        Ambitous software engineering student with a background in natural science and practical experience in technology and programming.
-        Interested in software development, automation and innovative techonology.
-      </p>
-    </div>
-    <!--EDUCATION-->
-    <div class="section">
-      <h3 class="section-tittle">Education</h3>
-
-      <div class="education">
-        <div class="education-tittle">
-          Bachelor in Software Engineering
-    </div>
-    <p>Via University College</p>
-    <p>2026 - Present</p>
-
-    <div class="education">
-      <div class="education-tittle">
-        Bachelor in Pharmacy
-    </div>
-    <p>University of Southern Philippines</p>
-    <p>2013-2015</p>
-    </div>
-    </div>
-    
-    <!--EXPERIENCE-->
-    <div class="section">
-      <h3 class="section-title">Work experience</h3>
-    
-      <div class="job">
-        <div class="job-header">
-          <div>
-            <div class="job-title">Hospitality</div>
-            <div class="company">Copenhagen Marriott</div>
-            </div>
-            <div class="date">
-                2025 - 2026
-                </div>
-              </div>
-              <ul>
-                <li>Provided high-quality service in a fast-paced environment</li>
-                <li>Worked independently while coordination with team members</li>
-                <li>Managed tasks efficiently whilte maintaining attentionto detail</li>
-              </ul>
-              </div>
-
-          <div class="job">
-            <div class="job-header">
-            <div>
-          <div class="job-title">Pharmacy Technician</div>
-          <div class="company">Optum Global Solutions</div>
-          </div>
-          <div class="date">
-              2022-2023
-        </div>
-        </div>
-        <ul>
-          <li>Clarifying patient prescription</li>
-          <li>Handling e-presciption and refill</li>
+        <ul class="skills-list">
+          <li>Engineering and technology</li>
+          <li>Programming</li>
+          <li>Electronics and Arduino</li>
+          <li>Science and innovation</li>
+          <li>Woodworking and design</li>
         </ul>
-      </div>
-   <div class="job">
-            <div class="job-header">
-            <div>
-          <div class="job-title">Pharmacy Assitant</div>
-          <div class="company">VSMMC Hospital</div>
-          </div>
-          <div class="date">
-              2021-2022
-        </div>
-        </div>
-        <ul>
-          <li>Handling patient prescription</li>
-          <li>Operate pnematic tube for drug distribution in different wards</li>
-          <li> Encoded prescriptions and insurance claims using BizBox and iPOS systems for various public health insurance programs.</li>
-        </ul>
-      </div>
-      <link rel="stylesheet" href="style.css">
-      <a href="page2.html">
-        <button type="button">Next →</button>
-    </a>
-    </div>
+      </section>
+      <footer>
+        <p>&copy; 2026 Aniara Lyn Lauron</p>
+      </footer>
+    </main>
   </body>
 </html>
