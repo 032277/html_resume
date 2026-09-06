@@ -1,20 +1,222 @@
-.project-list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  }
+
+body {
+font-family: Arial, sans-serif;
+background: #f2f2f2;
+color: #333;
+line-height: 1.5;
 }
+
+/* MAIN PAGE */
+.page {
+width: 210mm;
+min-height: 297mm;
+margin: 30px auto;
+padding: 35px 45px;
+background: white;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+/* HEADER */
+
+.page header {
+margin-bottom: 15px;
+}
+
+.page header h1 {
+font-size: 32px;
+letter-spacing: 1px;
+margin-bottom: 5px;
+}
+
+.subtitle {
+font-size: 16px;
+color: #666;
+}
+
+/* LINES */
+
+.top-line {
+border-bottom: 2px solid #333;
+margin-bottom: 25px;
+}
+
+.section-line {
+border-bottom: 1px solid #999;
+margin-bottom: 15px;
+}
+
+.bottom-line {
+border-bottom: 1px solid #999;
+margin-top: 25px;
+margin-bottom: 15px;
+}
+
+/* SECTION TITLES */
+
+.section-title {
+font-size: 18px;
+text-transform: uppercase;
+letter-spacing: 1px;
+margin-bottom: 5px;
+}
+
+/* PROFILE */
+
+.profile {
+font-size: 14px;
+text-align: justify;
+}
+
+/* CONTACT */
+
+.contact {
+font-size: 13px;
+color: #555;
+margin-top: 12px;
+}
+
+.contact span {
+margin-right: 15px;
+}
+
+/* EDUCATION */
+
+.education {
+margin-bottom: 18px;
+}
+
+.education-title {
+font-weight: bold;
+font-size: 15px;
+}
+
+.education p {
+font-size: 13.5px;
+}
+
+/* EXPERIENCE */
+
+.job {
+margin-bottom: 18px;
+}
+
+.job-header {
+display: flex;
+justify-content: space-between;
+margin-bottom: 4px;
+}
+
+.job-title {
+font-weight: bold;
+font-size: 15px;
+}
+
+.company {
+font-size: 13px;
+color: #666;
+}
+
+.date {
+font-size: 13px;
+color: #666;
+}
+
+.job ul {
+margin-left: 20px;
+font-size: 13.5px;
+}
+
+/* PROJECTS */
 
 .project {
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  background: white;
+margin-bottom: 20px;
 }
 
-.project h2 {
-  margin-bottom: 8px;
+.project h3 {
+font-size: 16px;
+margin-bottom: 4px;
 }
 
-.project p {
-  margin-bottom: 8px;
+.technologies {
+font-size: 13px;
+margin-bottom: 5px;
+}
+
+.project ul {
+margin-left: 20px;
+font-size: 13.5px;
+}
+
+.project li {
+margin-bottom: 3px;
+}
+
+/* NAVIGATION */
+
+.navigation {
+display: flex;
+justify-content: space-between;
+margin-top: 15px;
+}
+
+.nav-button {
+display: inline-block;
+padding: 8px 18px;
+border: 1px solid #333;
+color: #333;
+text-decoration: none;
+font-size: 14px;
+}
+
+.nav-button:hover {
+background: #333;
+color: white;
+}
+
+/* PRINT */
+
+@media print {
+
+```
+body {
+    background: white;
+}
+
+.page {
+    margin: 0;
+    box-shadow: none;
+    width: 210mm;
+    min-height: 297mm;
+}
+
+.navigation {
+    display: none;
+}
+
+.skills-list,
+.experience-list {
+margin-left: 20px;
+font-size: 13.5px;
+}
+.page3 .section {
+    margin-bottom: 35px;
+}
+
+.skills-list li,
+.experience-list li {
+margin-bottom: 10px;
+}
+
+.skills-list strong,
+.experience-list strong {
+font-weight: bold;
+}
+
+```
+
 }
