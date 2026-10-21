@@ -1,6 +1,8 @@
-/* =========================
-   RESET
-========================= */
+:root {
+  --color-dark: #333;
+  --color-muted: #666;
+  --color-background: #f2f2f2;
+}
 
 * {
   box-sizing: border-box;
@@ -14,17 +16,15 @@ html {
 
 body {
   font-family: Arial, sans-serif;
-  background: #f2f2f2;
-  color: #333;
+  background: var(--color-background);
+  color: var(--color-dark);
   line-height: 1.6;
 }
 
-/* =========================
-   NAVIGATION
-========================= */
+/* NAVIGATION*/
 
 .navbar {
-  background: #333;
+  background: var(--color-dark);
   padding: 15px 20px;
 }
 
@@ -46,9 +46,7 @@ body {
   text-decoration: underline;
 }
 
-/* =========================
-   MAIN PAGE
-========================= */
+/* MAIN PAGE*/
 
 .page {
   width: 90%;
@@ -60,9 +58,7 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
-/* =========================
-   HEADER
-========================= */
+/*HEADER*/
 
 header {
   margin-bottom: 25px;
@@ -76,15 +72,13 @@ header h1 {
 
 .subtitle {
   font-size: 16px;
-  color: #666;
+  color: var(--color-muted);
 }
 
-/* =========================
-   LINES
-========================= */
+/* LINES*/
 
 .top-line {
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid var(--color-dark);
   margin-bottom: 25px;
 }
 
@@ -99,9 +93,7 @@ header h1 {
   margin-bottom: 15px;
 }
 
-/* =========================
-   SECTION TITLES
-========================= */
+/*SECTION TITLES*/
 
 .section-title {
   font-size: 18px;
@@ -110,9 +102,7 @@ header h1 {
   margin-bottom: 10px;
 }
 
-/* =========================
-   INDEX
-========================= */
+/* INDEX */
 
 .profile {
   display: flex;
@@ -136,9 +126,7 @@ header h1 {
   font-size: 15px;
 }
 
-/* =========================
-   CONTACT
-========================= */
+/* CONTACT*/
 
 .contact {
   font-size: 13px;
@@ -150,9 +138,7 @@ header h1 {
   margin-right: 15px;
 }
 
-/* =========================
-   EDUCATION
-========================= */
+/*EDUCATION*/
 
 .education {
   margin-bottom: 18px;
@@ -167,9 +153,7 @@ header h1 {
   font-size: 13.5px;
 }
 
-/* =========================
-   EXPERIENCE
-========================= */
+/* EXPERIENCE*/
 
 .job {
   margin-bottom: 18px;
@@ -190,7 +174,7 @@ header h1 {
 .company,
 .date {
   font-size: 13px;
-  color: #666;
+  color: var(--color-muted);
 }
 
 .job ul {
@@ -198,9 +182,7 @@ header h1 {
   font-size: 13.5px;
 }
 
-/* =========================
-   SKILLS
-========================= */
+/*SKILLS*/
 
 .skills-list {
   margin-left: 20px;
@@ -211,11 +193,10 @@ header h1 {
   margin-bottom: 6px;
 }
 
-/* =========================
-   PROJECTS
-========================= */
+/*
+   PROJECTS*/
 
-/* GRID is used here */
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -229,9 +210,11 @@ header h1 {
 }
 
 .project img {
+  display: block;
   width: 100%;
-  height: 180px;
-  object-fit: cover;
+  height: 110px;
+  object-fit: contain;
+  background: white;
   margin-bottom: 15px;
 }
 
@@ -245,19 +228,53 @@ header h1 {
   margin-bottom: 8px;
 }
 
-.technologies {
-  font-size: 13px;
-  margin-bottom: 10px;
-}
-
 .project-link {
-  color: #333;
+  color: var(--color-dark);
   font-weight: bold;
 }
 
-/* =========================
-   FOOTER
-========================= */
+.project-page main > p {
+  margin-bottom: 20px;
+}
+
+.project-details {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 24px;
+}
+
+.project-image,
+.cute {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.project-info {
+  flex: 1;
+}
+
+.project-info p {
+  font-size: 14px;
+}
+
+.project-back {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: var(--color-dark);
+  font-weight: bold;
+}
+
+.technologies {
+  margin-top: 12px;
+}
+
+/*
+   FOOTER*/
 
 footer {
   text-align: center;
@@ -265,13 +282,12 @@ footer {
   padding-top: 15px;
   border-top: 1px solid #ccc;
   font-size: 13px;
-  color: #666;
+  color: var(--color-muted);
 }
 
-/* =========================
+/*
    RESPONSIVE - TABLET
-   768px
-========================= */
+   768px*/
 
 @media (max-width: 768px) {
   .page {
@@ -284,8 +300,19 @@ footer {
     grid-template-columns: 1fr;
   }
 
+  .project-details {
+    flex-direction: column;
+  }
+
+  .project-image,
+  .cute {
+    max-width: 100%;
+  }
+
   .profile {
-    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .navbar ul {
@@ -293,10 +320,8 @@ footer {
   }
 }
 
-/* =========================
-   RESPONSIVE - MOBILE
-   375px
-========================= */
+/* RESPONSIVE - MOBILE
+   375px*/
 
 @media (max-width: 375px) {
   body {
@@ -340,19 +365,17 @@ footer {
     gap: 0;
   }
 
-  .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  .project img {
+    height: 90px;
   }
 
-  .project img {
-    height: 160px;
+  .project {
+    padding: 12px;
   }
 }
 
-/* =========================
-   PRINT
-========================= */
+/*
+   PRINT */
 
 @media print {
   body {
@@ -368,4 +391,5 @@ footer {
   .navbar {
     display: none;
   }
+
 }
